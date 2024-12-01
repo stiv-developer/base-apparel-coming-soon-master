@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Base apparel coming soon master</title>
+  <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+  <!-- STYLES CSS  -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <section class="section">
+    <div class="logo">
+      <img src="images/logo.svg" alt="logo">
+    </div>
+    <div class="image-container">
+      <img src="images/hero-mobile.jpg" alt="">
+    </div>
+    <div class="content">
+      <div class="container">
+        <div class="logo-desktop">
+          <img src="images/logo.svg" alt="logo-deskptop">
+        </div>
+        <h1>WE'RE <span>COMING SOON</span></h1>
+        <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay
+          up-to-date
+          with announcements and our launch deals.</p>
+        <div class="email-input">
+          <input id="email" type="text" placeholder="Email Address" autocomplete="off">
+          <span class="icon-error"><img src="images/icon-error.svg" alt=""></span>
+          <button onclick="sendEmail()"><img src="images/icon-arrow.svg" alt=""></button>
+        </div>
+        <span class="error-email">Please provide a valid email</span>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>

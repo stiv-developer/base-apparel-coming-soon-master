@@ -1,0 +1,215 @@
+:root {
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --Desaturated-Red: hsl(0, 36%, 70%);
+    --Soft-Red: hsl(0, 93%, 68%);
+
+    /* ### Neutral */
+
+    --Dark-Grayish-Red: hsl(0, 6%, 24%);
+
+    /* ### Gradients */
+
+    /* - Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%) */
+    /* - Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #FFFAF9;
+    height: 100vh;
+}
+
+.section {}
+
+.section .logo {
+    padding: 30px;
+    background-color: white;
+}
+
+.section .logo img {
+    width: 100px;
+}
+
+.section .image-container {}
+
+.section .image-container img {
+    width: 100%;
+}
+
+.section .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 30px;
+}
+
+.section .content .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section .content .logo-desktop {
+    display: none;
+    border: 1px solid red;
+}
+
+.section .content h1 {
+    color: var(--Desaturated-Red);
+    font-weight: 300;
+    width: 230px;
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-bottom: 0;
+}
+
+.section .content h1 span {
+    font-weight: 500;
+    color: var(--Dark-Grayish-Red);
+    text-align: center;
+}
+
+.section .content p {
+    color: var(--Desaturated-Red);
+    text-align: center;
+    line-height: 20px;
+    width: 290px;
+    font-size: 0.85rem;
+}
+
+.section .content .email-input {
+    width: 300px;
+    border: 1px solid var(--Desaturated-Red);
+    /* padding: 10px; */
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    opacity: 0.8;
+    margin-top: 20px;
+}
+
+.section .content .email-input input {
+    border: none;
+    margin-left: 20px;
+    outline: none;
+    background-color: #FFFAF9;
+}
+
+::placeholder {
+    color: var(--Desaturated-Red);
+    font-weight: 600;
+    font-size: 0.85rem;
+    font-family: "Josefin Sans", sans-serif;
+    opacity: 0.6;
+}
+
+.section .content .email-input button {
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 70px;
+    border-radius: 30px;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    box-shadow: 0 4px 8px hsl(0, 80%, 86%);
+    cursor: pointer;
+
+}
+
+.section .content .email-input button:focus {
+    outline: none;
+    /* Asegúrate de eliminar el borde en el estado de foco */
+}
+
+.section .content .email-input button img {}
+
+/* ERROR INPUT  */
+
+.section .content .email-input .icon-error {
+    margin-right: 10px;
+    display: none;
+}
+
+.border-error-input {
+    border: 1px solid var(--Soft-Red) !important;
+}
+
+.error-email {
+    color: var(--Soft-Red);
+    padding: 10px 20px;
+    font-size: 0.85rem;
+    display: none;
+}
+
+@media only screen and (min-width:1000px) {
+
+    body {
+        overflow: hidden;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 100vh;
+    }
+
+    .section .logo {
+        display: none;
+    }
+
+    .section .image-container {
+        width: 45%;
+    }
+
+    .section .image-container img {
+        height: 100vh;
+    }
+
+    .section .content {
+        background-image: url(images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 55%;
+
+    }
+
+    .section .content .container {
+        align-items: start;
+        width: 500px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 50px 0;
+    }
+
+
+    .section .content h1 {
+        margin-top: 100px;
+        font-size: 4rem;
+        letter-spacing: 20px;
+    }
+
+    .section .content p {
+        font-size: 1.2rem;
+        width: 520px;
+        text-align: start;
+        line-height: 30px;
+    }
+
+    .section .content .email-input {
+        width: 500px;
+    }
+
+    .section .content .email-input input {
+        width: 390px;
+    }
+
+
+}
